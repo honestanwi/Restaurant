@@ -36,14 +36,21 @@ h1{
     top: 0;
     right: 0;
     margin: 40px 26px;
+<<<<<<< HEAD
     position: fixed;
+=======
+    position: relative;
+>>>>>>> 421c0751f57a418f0918079d9b2ba91e714ffb92
     
 }
 .map iframe{
     width: 100%;
     height: 420px;
     border: 0;
+<<<<<<< HEAD
     margin: 0;
+=======
+>>>>>>> 421c0751f57a418f0918079d9b2ba91e714ffb92
 }
 
 .footer-content{
