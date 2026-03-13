@@ -21,6 +21,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1000;
 }
 nav ul {
   display: flex;
@@ -60,13 +61,17 @@ nav ul a:hover {
   width: 200px;
 }
 nav > a {
+  display: flex;
   font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   color: var(--gold);
   text-decoration: none;
   letter-spacing: 2px;
-  
-}
+  }
+  nav > a span{
+    display: flex;
+    color: #f0e4d0;
+  }
 #nav-logo {
   display: flex;
   align-items: center;
@@ -108,4 +113,161 @@ nav div a:last-child {
 nav div a:last-child:hover {
   background:#af8336;
   color: var(--espresso);
+}
+footer {
+  background: #1a0f07;
+  padding: 7rem 4rem 2rem;
+}
+#footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+#footer-brand a {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 1rem;
+}
+#footer-brand a span{
+    color: #f0e4d0;
+}
+#footer-brand p {
+  font-family: 'Lora', serif;
+  font-size: 1.1rem;
+  color: rgba(253, 246, 236, 0.5);
+  line-height: 1.7;
+  font-style: italic;
+}
+#footer-social {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+#footer-social a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(253, 246, 236, 0.5);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: border-color 0.3s, color 0.3s;
+  text-align: center;
+}
+
+#footer-social a:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.footer-col h4 {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-col ul li a {
+  color: rgba(253, 246, 236, 0.5);
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--cream);
+}
+#footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: 1rem;
+  color: rgba(253, 246, 236, 0.5);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#footer-contact i {
+  color: var(--gold);
+  margin-top: 2px;
+  text-align: center;
+}
+#footer-bottom {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-bottom p {
+  font-size: 0.9rem;
+  color: rgba(253, 246, 236, 0.3);
+}
+@media (max-width: 1024px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  nav ul {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  nav ul a {
+    font-size: 0.75rem;
+  }
+
+  #nav-search {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 0.6rem;
+  }
+
+  nav ul a {
+    font-size: 0.7rem;
+  }
+
+  .nav div a:first-child,
+    nav div a:last-child {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
 }
