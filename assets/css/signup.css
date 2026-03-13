@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FDF6EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: #FDF6EC;
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0 0 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+.top {
+    background-color: #fdf5ea;
+    color: white;
+    padding: 10px;
+    margin: -30px -30px 20px -30px;
+}
+.container {
+    background-color: #FDF6EC;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 350px;
+
+}
