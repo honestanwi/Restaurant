@@ -36,7 +36,10 @@ h1{
     top: 0;
     right: 0;
     margin: 40px 26px;
+ 
     position: fixed;
+
+    position: relative;
     
 }
 .map iframe{
