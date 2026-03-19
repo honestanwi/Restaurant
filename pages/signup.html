@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-      <link rel="stylesheet" href="/assets/images/login-signup/image.png">
-      <link rel="shortcut icon" href="/assets/images/index/favicon.ico" type="image/x-icon">
-    <title>Sign up - FineDine</title>
-    <link rel="stylesheet" href="/pages/signup.html">
-    <link rel="stylesheet" href="/assets/css/signup.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FineDine | Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="/assets/css/signup.css"/>
 </head>
 <body>
-    <main class="signup-root">
-        <section class="form-wrap">
-            <div class="brand">
-               
-                <p class="tag"The Motherland - join FineDine></p>
-            </div>
-            <!--Main signup form-->
-            <form id="signup-form" class="signup-form" novalidate>
-                 <h1>Sign up to FineDine</h1>
-                <div class="field">
-                    <label for="name">Full name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your full name" required><br>
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="your.email@example.com" required><br>
-                </div>
-                <!--password field with toggle anc strength indicator-->
-                <div class="field">
-                    <label for="password">Password</label>
-                   <input type="password" placeholder="Enter Password" required>
-                    <button type="button" class="pw-toggle" id="pw-toggle" aria-label="Show password">
-                </div>
-                <div class="strength"aria-hidden="true">
-                    <div class="strength-bar" id="strenght-bar">
-                    </div>
-                </div>
-                <div class="field">
-                    <label for="confirm">Confirm password</label>
-                 <input id="confirm" name="confirm" type="password" placeholder="Confirm your password" minlength="6" required autocomplete="new-password"><br> 
-                  <a href="/index.html"></a><button type="submit">Sign Up</button></a>
-                </div>
-                <p class="small">Already have an account? <a href="/pages/login.html">Login</a></p>
 
-                 <div class="socials">
-                <button type="button" class="social-btn google" id="google-sign">Sign up with Google</button>
-                <button type="button" class="social-btn github" id="github-sign">Sign up with GitHub</button>
-            </div>
-            </form>
-            <!--Social signup options-->
-           
-        </section>
-    </main>
-   <script src="main.js">defer</script>
+  <div id="signup-card">
+
+    <a href="/index.html" id="signup-logo">
+      <img src="/assets/images/index/logo.png" alt="FineDine logo" />
+      Fine<span>Dine</span>
+    </a>
+    <p id="signup-tagline">Create your account and start ordering.</p>
+
+    <div class="input-wrap">
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Full Name"/>
+    </div>
+
+    <div class="input-wrap">
+      <i class="fas fa-envelope"></i>
+      <input type="email" placeholder="Email Address" />
+    </div>
+
+    <div class="input-wrap">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" />
+    </div>
+
+    <div class="input-wrap">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Confirm Password" />
+    </div>
+
+    <a href="/pages/login.html" id="signup-btn">Create Account</a>
+
+    <p id="login-link">Already have an account? <a href="/pages/login.html">Log In</a></p>
+
+  </div>
+
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</htm
->>>>>>> 0026e09d9559de4629fb5de59c0a851fae855456
