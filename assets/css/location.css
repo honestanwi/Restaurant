@@ -102,3 +102,67 @@ h1{
 #map-address strong {
   color: var(--gold);
 }
+
+@media (max-width: 1024px) {
+  #location-wrap {
+    flex-direction: row;
+  }
+
+  #hours {
+    padding: 4rem 3rem;
+  }
+
+  #map-wrap {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hours {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  #hours h2 {
+    font-size: 2rem;
+  }
+
+  .hours-row {
+    font-size: 0.85rem;
+  }
+
+  #map-wrap {
+    min-height: 350px;
+  }
+
+  #map-address {
+    padding: 1rem 1.5rem;
+  }
+
+  #map-address span {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #hours {
+    padding: 2.5rem 1.2rem;
+  }
+
+  #hours h2 {
+    font-size: 1.6rem;
+  }
+
+  #hours-label {
+    font-size: 0.65rem;
+  }
+
+  .hours-row {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+  }
+
+  #map-wrap {
+    min-height: 300px;
+  }
+}
