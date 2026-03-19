@@ -1,0 +1,419 @@
+ *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --terracotta: #C1440E;
+      --terracotta-dark: #8f2e06;
+      --gold: #E8A838;
+      --gold-light: #f5c96a;
+      --cream: #FDF6EC;
+      --cream-dark: #f0e4d0;
+      --espresso: #2C1A0E;
+      --espresso-light: #4a2f1a;
+      --green: #3A6B35;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--espresso);
+      overflow-x: hidden;
+      padding-top: 70px;
+    }
+
+    h1, h2, h3, h4 { 
+        font-family: 'Playfair Display', serif; }
+    /* ── MENU HERO ── */
+    #menu-hero {
+      background:
+        linear-gradient(to bottom, rgba(44,26,14,0.75), rgba(44,26,14,0.55)),
+        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80') center/cover no-repeat;
+      padding: 5rem 4rem;
+      text-align: center;
+    }
+
+    #menu-hero span {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--espresso);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      padding: 0.4rem 1.4rem;
+      border-radius: 20px;
+      margin-bottom: 1.2rem;
+    }
+
+    #menu-hero h1 {
+      font-size: 3.5rem;
+      color: var(--white);
+      margin-bottom: 0.8rem;
+    }
+
+    #menu-hero h1 em {
+      color: var(--gold);
+      font-style: italic;
+    }
+
+    #menu-hero p {
+      font-family: 'Lora', serif;
+      font-size: 1rem;
+      color: rgba(253,246,236,0.8);
+      font-style: italic;
+    }
+
+    /* ── TABS ── */
+    #menu-tabs {
+      background: var(--espresso);
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      position: sticky;
+      top: 70px;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: rgba(253,246,236,0.5);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 1.2rem 3rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: color 0.3s, border-color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .tab-btn:hover { color: var(--cream); }
+
+    .tab-btn.active {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+
+    .tab-btn i { font-size: 1rem; }
+
+    #menu-content {
+      padding: 5rem 4rem;
+    }
+
+    .menu-section { display: none; }
+    .menu-section.active { display: block; }
+
+    .menu-section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .menu-section-header h2 {
+      font-size: 2.5rem;
+      color: var(--espresso);
+    }
+
+    .menu-section-header h2 em {
+      color: var(--terracotta);
+      font-style: italic;
+    }
+
+    .menu-section-header p {
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      color: var(--espresso-light);
+      opacity: 0.7;
+      font-style: italic;
+      max-width: 300px;
+      text-align: right;
+    }
+
+    .dish-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .dish-card {
+      background: var(--white);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(44,26,14,0.07);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .dish-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 30px rgba(44,26,14,0.12);
+    }
+
+    .dish-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .dish-card:hover img { transform: scale(1.04); }
+
+    .dish-card-body {
+      padding: 1.2rem 1.4rem 1.4rem;
+    }
+
+    .dish-tag {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 0.5rem;
+    }
+
+    .dish-card h3 {
+      font-size: 1.1rem;
+      color: var(--espresso);
+      margin-bottom: 0.4rem;
+    }
+
+    .dish-card p {
+      font-size: 0.8rem;
+      color: var(--espresso-light);
+      opacity: 0.7;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .dish-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .dish-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--espresso);
+      font-weight: 700;
+    }
+
+    .btn-add {
+      background: var(--terracotta);
+      color: var(--white);
+      border: none;
+      padding: 0.5rem 1.1rem;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      letter-spacing: 0.5px;
+      transition: background 0.3s, transform 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-add:hover {
+      background: var(--terracotta-dark);
+      transform: translateY(-2px);
+    }
+
+    /* popular badge */
+    .dish-card.popular { position: relative; }
+
+    .popular-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: var(--gold);
+      color: var(--espresso);
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+
+   /* Drinks */
+    .drinks-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .drink-card {
+      background: var(--espresso);
+      border-radius: 6px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .drink-card:hover { transform: translateY(-5px); }
+
+    .drink-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .drink-card-body { padding: 1.2rem; }
+
+    .drink-card h3 {
+      font-size: 1rem;
+      color: var(--cream);
+      margin-bottom: 0.3rem;
+    }
+
+    .drink-card p {
+      font-size: 0.75rem;
+      color: rgba(253,246,236,0.5);
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .drink-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      color: var(--gold);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+
+    .btn-add-drink {
+      background: var(--gold);
+      color: var(--espresso);
+      border: none;
+      padding: 0.45rem 1rem;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    .btn-add-drink:hover { background: var(--gold-light); }
+
+    /* ── TAB JS SCRIPT ── */
+/* @media (max-width: 1024px) {
+  #menu-hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+    @media (max-width: 768px) {
+  #menu-hero {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  #highlights {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+    padding: 4rem 1.5rem;
+  }
+}
+  #menu-hero h1 {
+    font-size: 3rem;
+  }
+
+  #menu-hero p {
+    font-size: 1rem;
+  }
+
+  #menu-hero div {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  #menu-hero div a:first-child,
+  #menu-hero div a:last-child {
+    width: 100%;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+  #reviews-track-wrap {
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+}
+
+@media (max-width: 480px) {
+
+  #menu-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #menu-hero p {
+    font-size: 0.95rem;
+  }
+
+  #menu-tag {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+  #menu-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  #menu-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #menu-tabs {
+    top: 160px;
+  }
+
+  .tab-btn {
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  #menu-hero h1 {
+    font-size: 2rem;
+  }
+
+  #menu-hero p {
+    font-size: 0.88rem;
+  }
+
+  #menu-tabs {
+    top: 140px;
+  }
+
+  .tab-btn {
+    padding: 1rem;
+    font-size: 0.7rem;
+    flex: 1;
+    justify-content: center;
+  }
+} */
