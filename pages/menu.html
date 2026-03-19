@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/index/favicon.ico" type="image/x-icon">
+    <title>FineDine | Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/css/menu.css">
+    <link rel="stylesheet" href="/assets/css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="nav-logo"><img src="/assets/images/index/favicon.ico" alt="FineDine logo" width="50" height="50">Fine<span>Dine</span></a>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/menu.html" class="active">Menu</a></li>
+            <li><a href="/pages/order.html">Order</a></li>
+            <li><a href="/pages/reservation.html">Reservations</a></li>
+            <li><a href="/index.html#reviews">Reviews</a></li>
+            <li class="local"><a href="/pages/location.html">Location</a></li>
+        </ul>
+        <input type="search" id="nav-search" placeholder="🔍 Search dishes..." />
+        <div>
+            <a href="/pages/login.html">Log In</a>
+            <a href="/pages/signup.html">Sign Up</a>
+        </div>
+    </nav>
+<div id="menu-hero">
+<span id="menu-tag">Our Full Menu</span>
+  <h1>What are you<br/><em>craving?</em></h1>
+  <p>Fresh ingredients, authentic recipes, bold African flavours</p>
+</div>
+<div id="menu-tabs">
+    <button class="tab-btn active" onclick="showTab('breakfast', this)">
+      <i class="fas fa-sun"></i> Breakfast
+    </button>
+    <button class="tab-btn" onclick="showTab('lunch', this)">
+      <i class="fas fa-drumstick-bite"></i> Lunch
+    </button>
+    <button class="tab-btn" onclick="showTab('drinks', this)">
+      <i class="fas fa-glass-water"></i> Drinks
+    </button>
+  </div>
+
+<div id="menu-content">
+  <!-- BREAKFAST SECTION -->
+  <div id="breakfast" class="menu-section active">
+    <div class="menu-section-header">
+      <h2>Good morning, <em>eat well</em></h2>
+      <p>Served 7:00 AM – 12:00 PM</p>
+    </div>
+    <div class="dish-grid">
+      <!-- dish cards go here -->
+       <div class="dish-card">
+       <img src="/assets/images/menu/achombo.png" alt="Achombo">
+    <div class="dish-card-body">
+      <span class="dish-tag"> Cameroonian · breakfast</span>
+      <h3>Achombo</h3>
+      <p>Fried, seasoned beans with a side of golden fried puff-puff</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1000</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+   </div>
+       <div class="dish-card">
+       <img src="/assets/images/menu/donuts.png" alt="Donuts">
+    <div class="dish-card-body">
+      <span class="dish-tag">Cameroonian · breakfast</span>
+      <h3>Donuts</h3>
+      <p>Golden fried donuts, goes ith a cup of tea or coffee</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1000</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+</div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/fries and eggs.png" alt="French fries">
+    <div class="dish-card-body">
+      <span class="dish-tag">Cameroonian · breakfast</span>
+      <h3>French-fries</h3>
+      <p>Golden fried french fries, with a side of scrambled eggs</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1500</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+    </div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/samosa.png" alt="samosa">
+    <div class="dish-card-body">
+      <span class="dish-tag">Kenyan · breakfast</span>
+      <h3>Samosa</h3>
+      <p>crispy, Golden savory mixture, can be taken with tea or coffee</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1000</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+    </div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/pancakes.png" alt="Pancakes">
+    <div class="dish-card-body">
+      <span class="dish-tag">Cameroonian · breakfast</span>
+      <h3>Pancakes</h3>
+      <p>Light flufffy golden fried pancakes, often served with syrup or honey</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1500</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+    </div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/pap.png" alt="pap">
+    <div class="dish-card-body">
+      <span class="dish-tag">Cameroonian/Nigerian · breakfast</span>
+      <h3>Pap</h3>
+      <p>fermented corn porridge, usually eaten with akara, bread</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1000</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+</div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/akara.png" alt="Akara">
+    <div class="dish-card-body">
+      <span class="dish-tag">Nigerian · breakfast</span>
+      <h3>Akara</h3>
+      <p>crispy fried bean cake, usually eaten with pap</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1500</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+</div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/masa.png" alt="masa">
+    <div class="dish-card-body">
+      <span class="dish-tag">South-African · breakfast</span>
+      <h3>Masa</h3>
+      <p>soft mixture with meat filing, usually taken with tea or coffee</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1500</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+    </div>
+
+       <div class="dish-card">
+       <img src="/assets/images/menu/meat-pie.png" alt="meat-pie">
+    <div class="dish-card-body">
+      <span class="dish-tag">Nigerian · breakfast</span>
+      <h3>Meat-pie</h3>
+      <p>crispy golden fried mixture with meat filing, usually taken with tea or coffee</p>
+      <div class="dish-card-footer">
+      <span class="dish-price">FCFA1500</span>
+      <a href="/pages/order.html" class="btn-add">Add to Order</a>
+    </div></div>
+  </div>
+</div>
+</div>
+
+<div id="lunch" class="menu-section">
+        <!-- LUNCH SECTION -->
+    <div class="menu-section-header">
+      <h2>Lunch, done <em>right</em></h2>
+      <p>Served 12:00 PM – 5:00 PM</p>
+    </div>
+
+    <div class="dish-grid">
+      <!-- dish cards go here -->
+ <div class="dish-card">
+  <img src="/assets/images/menu/jollof-rice.png" alt="Jollof Rice" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Nigerian · West African</span>
+    <h3>Party Jollof Rice</h3>
+    <p>Smoky, slow-cooked Nigerian jollof with fried plantain and grilled chicken.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA3,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div>
+
+<div class="dish-card">
+  <img src="/assets/images/menu/egusi.png" alt="Egusi Soup" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Nigerian · Lunch</span>
+    <h3>Egusi Soup</h3>
+    <p>Ground melon seeds, leafy greens and assorted meat. Served with fufu or eba.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div>
+
+<div class="dish-card">
+  <img src="/assets/images/menu/suya.png" alt="Suya" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Street Food</span>
+    <h3>Suya</h3>
+    <p>Grilled spiced beef skewers with raw onion, tomato and yaji spice blend.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA1,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div>
+
+<div class="dish-card">
+  <img src="/assets/images/menu/ndole.png" alt="Ndole" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Ndolé</h3>
+    <p>Bitterleaf stew with groundnuts, shrimp and beef. Cameroon's national dish.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div>
+
+<div class="dish-card">
+  <img src="/assets/images/menu/eru.png" alt="eru" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch</span>
+    <h3>Thiéboudienne</h3>
+    <p>Senegal's beloved rice and fish dish cooked in rich tomato sauce with vegetables.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div>
+
+<div class="dish-card">
+  <img src="/assets/images/menu/injera.png" alt="Injera Platter" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Injera Platter</h3>
+    <p>Sourdough flatbread served with a spread of wats — lentil, chickpea and lamb stews.</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA3,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/koki.png" alt="Koki" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Koki</h3>
+    <p>Grounded beans in plantain leaves</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/achu.png" alt="Achu" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Achu</h3>
+    <p>Yellow soup with pounded fufu</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA3,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/beef-sauce.png" alt="beef-sauce" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Beef-Sauce</h3>
+    <p>Tomato stew with beef toppings</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/cornchaff.png" alt="Cornchaff" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Cornchaff</h3>
+    <p>A mix of corn and beans with tasty flavours</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA1,500</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/DG.png" alt="DG" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Pantain DG</h3>
+    <p>Fried plantains and fired chicken mix</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA3,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/Tagine.png" alt="Tagine" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Morrocan · Lunch </span>
+    <h3>Tagine</h3>
+    <p>Mixture of beef, vegetables and fried potatoes steamed together</p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA3,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+</div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/okok.png" alt="Okok" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Okok</h3>
+    <p>Eru leaves with groundnuts, usually eaten with cassava </p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+  </div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/blacksoup.png" alt="Black-Soup" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Black-Soup</h3>
+    <p>savoury steamed soup with fish, usually eaten with plantains </p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+  </div> 
+
+<div class="dish-card">
+  <img src="/assets/images/menu/kwacoco.png" alt="Kwacoco" />
+  <div class="dish-card-body">
+    <span class="dish-tag">Cameroonian · Lunch </span>
+    <h3>Kwacoco</h3>
+    <p>Grounded cocoyams, steamed and tied, usually eaten with a little stew </p>
+    <div class="dish-card-footer">
+      <span class="dish-price">FCFA2,000</span>
+      <a href="order.html" class="btn-add">Add to Order</a>
+    </div>
+  </div>
+  </div> 
+
+</div>
+</div>
+
+  <!-- DRINKS SECTION -->
+  <div id="drinks" class="menu-section">
+
+    <div class="menu-section-header">
+      <h2>Sip something <em>special</em></h2>
+      <p>Available all day</p>
+    </div>
+
+    <div class="drinks-grid">
+      <!-- drink cards go here -->
+    </div>
+  </div>
+</div>
+
+
+ <footer>
+  <div id="footer-grid">
+
+    <div id="footer-brand">
+      <a href="index.html">Fine<span>Dine</span></a>
+      <p>A Pan-African restaurant welcoming the world to Africa's richest flavours. Every dish carries a story, we're just here to share it.</p>
+      <div id="footer-social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/237670566789"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/pages/menu.html">Menu</a></li>
+        <li><a href="/pages/order.html">Order Online</a></li>
+        <li><a href="/pages/reservation.html">Reservations</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="/pages/login.html">Log In</a></li>
+        <li><a href="/pages/signup.html">Sign Up</a></li>
+        <li><a href="/pages/order.html">My Orders</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col" id="footer-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-phone"></i> +237670566789</p>
+<p><i class="fas fa-envelope"></i> anwihonest@gmail.com</p>
+<p><i class="fas fa-location-dot"></i> Ancient Route, Bonaberi Douala</p>
+    </div>
+
+  </div>
+
+  <hr />
+
+  <div id="footer-bottom">
+    <p>© 2025 FineDine. All rights reserved.</p>
+  </div>
+
+</footer>
+<script>
+    function showTab(tabId, btn) {
+      // hide all sections
+      document.querySelectorAll('.menu-section').forEach(s => s.classList.remove('active'));
+      // remove active from all buttons
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      // show selected section
+      document.getElementById(tabId).classList.add('active');
+      // mark button active
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html> 
