@@ -1,67 +1,140 @@
 body {
-    font-family: sans-serif;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A clean, modern font */
+     background-image: #FDF6EC;
     display: flex;
+
+    justify-content: center; /* Horizontally center */
+
+    align-items: center;           
+    background-image: url(../images/img.png); 
+    background-color: #fdf6ec;    
+    margin: 0; 
+    min-height: 100vh; 
+    padding: 52px;             
+    align-items: left;
     justify-content: left;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #FDF6ec;
-    background-image:url(/assets/images/login-signup/image.png) ;
-    background-size: cover;
-    background-repeat: no-repeat;
+    color: #333;        
 }
+
+/* The main container for the login form */
+
 .login-container {
-    background-color: #FDF6ec;
-    padding: 6px;
-    border-radius: 8px;
-    box-shadow: 0 3px 5px;
-    text-align: center;
-    width: 430px;
-    height: 550px;
-    margin-left: 20px ;
+
+    background-color: #FDF6ec; /* White background for the form */
+
+    padding: 40px;             /* Generous padding inside the container */
+
+    border-radius: 12px;       /* Rounded corners for a softer look */
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* A more pronounced shadow for depth */
+
+    text-align: center;        /* Center align text within the container */
+    
+
+    width: 300px;              /* Fixed width for consistency */
+    height: 450px;
+
+    max-width: 90%;            /* Responsive width on smaller screens */
+
+    border: 1px solid #e0e0e0; /* Subtle border */
+
 }
-.h1 {
-    margin-bottom: 20px;
-    color: white
+
+h2 {
+
+    margin-bottom: 30px;       /* More space below the heading */
+
+    color: #C1440E;            /* A nice blue for the heading */
+
+    font-size: 28px;           /* Larger heading */
+
+    font-weight: 600;          /* Semi-bold */
+
 }
+
+/* Styling for each form group (label + input) */
+
 .form-group {
-    margin-bottom: 30px;
-    text-align: left;
-    padding: 8px;
-    display: flex;
-    gap: 4px;
-}
-.form-group label {
-    display: flex;
-margin-bottom: 20px;
-color: white;
-font-weight: bold;
+
+    margin-bottom: 20px;       /* Space between input fields */
+
+    text-align: left;          /* Align labels and inputs to the left */
+
 }
 
-.form-group input[type="text"]
-.form-group input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.input-box div {
-    color: #FDF6ec;
-    margin-right: 10px;
-}
-.forgot-password {
+label {
 
-    display: inline;
-    text-align: left;
-    font-size: 10px;
-    color: black;
-    text-decoration: none;
-    margin-bottom: 15px;
+    display: block;            /* Make label take its own line */
+
+    margin-bottom: 8px;        /* Space between label and input */
+
+    color: #555;               /* Slightly lighter text color for labels */
+
+    font-weight: bold;         /* Make labels bold */
+
+    font-size: 15px;
+
 }
 
-.label {
-    margin-top: 20px;
-    font-size: 12px;
-    color: grey;
-    text-align: left;
+/* Styling for input fields (username and password) */
+
+input[type="text"],
+
+input[type="password"] {
+
+    width: 100%;               /* Full width of its parent container */
+
+    padding: 12px 15px;        /* Comfortable padding inside input */
+
+    border: 1px solid #ccc;    /* Light grey border */
+
+    border-radius: 6px;        /* Rounded corners for inputs */
+
+    box-sizing: border-box;    /* Ensure padding/border are included in the element's total width and height */
+
+    font-size: 16px;           /* Readable font size */
+
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on focus */
+
+}
+
+/* Style for input fields when they are in focus */
+
+input[type="text"]:focus,
+
+input[type="password"]:focus {
+
+    border-color: #C1440E;     /* Highlight border with primary color */
+
+    box-shadow: 0 0 0 3px rgb(178, 78, 6); /* Subtle glow effect */
+
+    outline: none;             /* Remove default outline */
+
+}
+
+/* Styling for the login button */
+
+button[type="submit"] {
+
+    background-color: #C1440E; /* A vibrant green for the login button */
+
+    color: White(27, 27, 144, 0.526);              /* White text */
+
+    padding: 12px 20px;        /* Good padding */
+
+    border: none;              /* No border */
+
+    border-radius: 6px;        /* Rounded corners */
+
+    cursor: pointer;           /* Indicate it's clickable */
+
+    width: 100%;               /* Full width */
+
+}
+button[type="submit"] a{
+    text-decoration: none white;
+}
+div.option a{
+    padding-top: 8px;
 }

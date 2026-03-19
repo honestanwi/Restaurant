@@ -2,23 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/images/login-signup/favicon.ico" type="image/x-icon">
-    <title>FineDine | Sign Up</title>
-    <link rel="stylesheet" href="/pages/signup.html/">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+      <link rel="stylesheet" href="/assets/images/login-signup/image.png">
+    <title>Sign up - FineDine</title>
+    <link rel="stylesheet" href="/pages/signup.html">
     <link rel="stylesheet" href="/assets/css/signup.css">
 </head>
 <body>
-    <div class="form-box" id="sigup-form">
-        <h2>Create Account</h2>
-        <form action="/index.html" id="signuup">
-            <input type="text" placeholder="User Name" required><br>
-            <input type="email" placeholder="Email Address" required><br>
-            <input type="tel" placeholder="Phone Number" required><br>
-            <input type="password" placeholder="Enter Password" required><br>
-            <input type="password" placeholder="Confirm password" required><br>
-            <input type="submit" value="Sign Up" id="signup-btn">
-        </form>
-        <p>Already have an account <switch id="login-link">login</switch></p>
+    <main class="signup-root">
+        <section class="form-wrap">
+            <div class="brand">
+               
+                <p class="tag"The Motherland - join FineDine></p>
+            </div>
+            <!--Main signup form-->
+            <form id="signup-form" class="signup-form" novalidate>
+                 <h1>Sign up to FineDine</h1>
+                <div class="field">
+                    <label for="name">Full name</label><br>
+                    <input id="name" name="name" type="text" placeholder="Enter your full name" required autocomplete="name"><br>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label><br>
+                    <input id="email" name="email" type="email" placeholder="your.email@example.com" required autocomplete="email"><br>
+                </div>
+                <!--password field with toggle anc strength indicator-->
+                <div class="field">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <input id="password" name="password" type="password" placeholder="Enter a password" minlength="6" required autocomplete="new-password">
+                    </div>
+                    <button type="button" class="pw-toggle" id="pw-toggle" aria-label="Show password">
+                </div>
+                <div class="strength"aria-hidden="true">
+                    <div class="strength-bar" id="strenght-bar">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="confirm">Confirm password</label><br>
+                 <input id="confirm" name="confirm" type="password" placeholder="Confirm your password" minlength="6" required autocomplete="new-password"><br> 
+                  <a href="/index.html"></a><button type="submit">Sign Up</button></a>
+                </div>
+                <p class="small">Already have an account? <a href="/pages/login.html">Login</a></p>
+
+                 <div class="socials">
+                <button type="button" class="social-btn google" id="google-sign">Sign up with Google</button>
+                <button type="button" class="social-btn github" id="github-sign">Sign up with GitHub</button>
+            </div>
+            </form>
+            <!--Social signup options-->
+           
+        </section>
+    </main>
+   <script src="main.js">defer</script>
 </body>
-</htm
+</html>
