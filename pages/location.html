@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
-    <link rel="stylesheet" href="c:\Users\Brenda\Desktop\Restaurant\assets\css\location.css">
+    <link rel="shortcut icon" href="/assets/images/index/favicon.ico" type="image/x-icon">
+    <title>FineDine | Location</title>
+    <link rel="stylesheet" href="/assets/css/location.css">
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
-     <link rel="stylesheet" href="../assets/css/header-footer.css">
+     <link rel="stylesheet" href="/assets/css/header-footer.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     </head>
 
 
 <body> 
     <nav>
-        <a href="index.html" id="nav-logo"><img src="../assets/images/index/favicon.ico" alt="FineDine logo" width="50" height="50">Fine<span>Dine</span></a>
+        <a href="/index.html" id="nav-logo"><img src="../assets/images/index/logo.png" alt="FineDine logo" width="50" height="50">Fine<span>Dine</span></a>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/pages/menu.html">Menu</a></li>
             <li><a href="/pages/order.html">Order</a></li>
             <li><a href="/pages/reservation.html">Reservations</a></li>
-            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="/index.html#reviews">Reviews</a></li>
             <li class="local"><a href="/pages/location.html">Location</a></li>
         </ul>
         <input type="search" id="nav-search" placeholder="🔍 Search dishes..." />
@@ -30,40 +30,58 @@
         </div>
     </nav>
 
-    <section class="header">
+<div id="location-wrap">
 
-        <!-- Location -->
-         <section class="location">
-            <h1><strong>Our Location:</strong></h1>
-            
-            <div class="address">
-              <h1><strong>Our Location:</strong></h1>
-                <p><strong>Douala, Cameroon</strong></p>
-                <p><strong>Rue Alfred Saker, Akwa Douala</strong></p>
-                <p><strong>123 Food Street</strong></p>                
+  <div id="hours">
 
-                <h1><strong>Opening Hours:</strong></h1>
-                <p><strong>Mon - Fri: 9AM - 22PM</strong></p>
-                <p><strong>Sat - Sun: 12PM - 23PM</strong></p>
-            </div>
-                    <div class="map">
-                <iframe src="https://maps.google.com/maps?q=Ancienne%20Route%20Bonaberi%20Douala&t=&z=
-                15&ie=UTF8&iwloc=&output=embed" frameborder="0">
-            </iframe>
+    <p id="hours-label">WE'RE OPEN</p>
 
-            
-            </div>
-            
-         </section>
-        </section>
+    <h2>Opening <em>Hours</em></h2>
 
+    <div class="hours-list">
 
-            </div>
+      <div class="hours-row">
+        <span class="day">Monday – Wednesday</span>
+        <span class="time">10:00 – 21:00</span>
+      </div>
 
-         </section>
-    </section>
+      <div class="hours-row">
+        <span class="day">Thursday – Friday</span>
+        <span class="time">10:00 – 23:00</span>
+      </div>
 
-    <!-- footer -->
+      <div class="hours-row">
+        <span class="day">Saturday</span>
+        <span class="time">09:00 – 23:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span class="day">Sunday</span>
+        <span class="time">11:00 – 20:00</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="map-wrap">
+    <iframe
+      src="https://maps.google.com/maps?q=Ancienne%20Route%20Bonaberi%20Douala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <div id="map-address">
+      <i class="fas fa-location-dot"></i>
+      <span><strong>FineDine Restaurant</strong> · Ancienne Route, Bonaberi, Douala</span>
+    </div>
+
+  </div>
+
+</div>
      <footer>
 
   <div id="footer-grid">
