@@ -36,12 +36,12 @@ margin:auto;
 padding-top: 90px;
 }
 .logo{
-    width: 100px;
+    width: 200px;
     display: flex;
     margin: 0 auto 0px auto;
     margin-bottom: 10px;
     position: top;
-    height: 100px;
+    height: 200px;
 }
 
 /* FORM */
