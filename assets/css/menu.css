@@ -22,7 +22,8 @@
       padding-top: 70px;
     }
 
-    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    h1, h2, h3, h4 { 
+        font-family: 'Playfair Display', serif; }
     /* ── MENU HERO ── */
     #menu-hero {
       background:
@@ -102,7 +103,6 @@
 
     .tab-btn i { font-size: 1rem; }
 
-    /* ── MENU CONTENT ── */
     #menu-content {
       padding: 5rem 4rem;
     }
@@ -139,7 +139,6 @@
       text-align: right;
     }
 
-    /* ── DISH GRID ── */
     .dish-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -249,7 +248,7 @@
       border-radius: 20px;
     }
 
-    /* ── DRINKS SPECIAL LAYOUT ── */
+   /* Drinks */
     .drinks-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
