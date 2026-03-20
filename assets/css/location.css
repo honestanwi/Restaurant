@@ -109,3 +109,34 @@ h1{
 #map-address strong {
   color: var(--gold);
 }
+.address p{
+    margin: 20px 100px;
+    color: white;
+}
+.address h1{
+    margin: 100px 100px;
+}
+.map iframe{
+    height: 700px;
+    width: 1000px;
+    border-radius: 8px;
+    margin: 0;
+    border: 0;
+}
+
+.map{
+  box-shadow: 0 15px 35px rgba(44, 26, 14, 0.65);
+  display: flex;
+  float: right;
+  justify-content: center;
+  top: 100px;
+  right: 0;
+  margin: 40px 46px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.address{
+    height: 700px;
+}
+
