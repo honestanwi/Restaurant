@@ -28,7 +28,7 @@
     #menu-hero {
       background:
         linear-gradient(to bottom, rgba(44,26,14,0.75), rgba(44,26,14,0.55)),
-        url('/assets/images/index/hero.png') center/cover no-repeat;
+        url('../images/index/hero.png') center/cover no-repeat;
       padding: 5rem 4rem;
       text-align: center;
     }
@@ -313,70 +313,30 @@
     .btn-add-drink:hover { background: var(--gold-light); }
 
     /* ── TAB JS SCRIPT ── */
-/* @media (max-width: 1024px) {
-  #menu-hero h1 {
-    font-size: 4rem;
+@media (max-width: 1024px) {
+  #menu-content {
+    padding: 4rem 2rem;
+  }
+  #menu-tabs {
+      gap: 0;
+      position: sticky;
+      top: 50px;
+      z-index: 1000;
+    }
+
+  .dish-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-section-header h2 {
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 768px) {
-    @media (max-width: 768px) {
-  #menu-hero {
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-
-  #highlights {
-    width: 100%;
-  }
-
-  section {
-    width: 100%;
-    padding: 4rem 1.5rem;
-  }
-}
-  #menu-hero h1 {
-    font-size: 3rem;
-  }
-
-  #menu-hero p {
-    font-size: 1rem;
-  }
-
-  #menu-hero div {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  #menu-hero div a:first-child,
-  #menu-hero div a:last-child {
-    width: 100%;
-    text-align: center;
-  }
-  @media (max-width: 768px) {
-  #reviews-track-wrap {
-    overflow: hidden;
-    max-width: 100%;
-  }
-}
-}
-
-@media (max-width: 480px) {
-
-  #menu-hero h1 {
-    font-size: 2.5rem;
-  }
-
-  #menu-hero p {
-    font-size: 0.95rem;
-  }
-
-  #menu-tag {
-    font-size: 0.65rem;
-    letter-spacing: 2px;
-  }
-}
 @media (max-width: 768px) {
   #menu-hero {
     padding: 3rem 1.5rem;
@@ -387,13 +347,36 @@
   }
 
   #menu-tabs {
-    top: 160px;
+    top: 70px;
   }
 
   .tab-btn {
     padding: 1rem 1.5rem;
     font-size: 0.75rem;
     letter-spacing: 1px;
+  }
+
+  #menu-content {
+    padding: 3rem 1.5rem;
+  }
+
+  .menu-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .menu-section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .dish-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -407,8 +390,11 @@
   }
 
   #menu-tabs {
-    top: 140px;
-  }
+      gap: 0;
+      position: sticky;
+      top: 90px;
+      z-index: 1000;
+    }
 
   .tab-btn {
     padding: 1rem;
@@ -416,4 +402,28 @@
     flex: 1;
     justify-content: center;
   }
-} */
+
+  .tab-btn i {
+    display: none;
+  }
+
+  .dish-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drinks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dish-card img {
+    height: 180px;
+  }
+}
+@media (max-width: 400px) {
+   #menu-tabs {
+      gap: 0;
+      position: sticky;
+      top: 130px;
+      z-index: 1000;
+    }
+}

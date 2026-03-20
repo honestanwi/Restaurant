@@ -20,50 +20,68 @@
             <li><a href="menu.html">Menu</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="reservation.html">Reservations</a></li>
-            <li><a href="/index.html#reviews">Reviews</a></li>
+            <li><a href="../index.html#reviews">Reviews</a></li>
             <li class="local"><a href="location.html">Location</a></li>
         </ul>
         <input type="search" id="nav-search" placeholder="🔍 Search dishes..." />
         <div>
-            <a href="login.html">Log In</a>
+            <!-- <a href="login.html">Log In</a> -->
             <a href="signup.html">Sign Up</a>
         </div>
     </nav>
 
-    <section class="header">
+<div id="location-wrap">
 
-        <!-- Location -->
-         <section class="location">
-            <h1><strong>Our Location:</strong></h1>
-            
-            <div class="address">
-              <h1><strong>Our Location:</strong></h1>
-                <p><strong>Douala, Cameroon</strong></p>
-                <p><strong>Rue Alfred Saker, Akwa Douala</strong></p>
-                <p><strong>123 Food Street</strong></p>                
+  <div id="hours">
 
-                <h1><strong>Opening Hours:</strong></h1>
-                <p><strong>Mon - Fri: 9AM - 22PM</strong></p>
-                <p><strong>Sat - Sun: 12PM - 23PM</strong></p>
-            </div>
-                    <div class="map">
-                <iframe src="https://maps.google.com/maps?q=Ancienne%20Route%20Bonaberi%20Douala&t=&z=
-                15&ie=UTF8&iwloc=&output=embed" frameborder="0">
-            </iframe>
+    <p id="hours-label">WE'RE OPEN</p>
 
-            
-            </div>
-            
-         </section>
-        </section>
+    <h2>Opening <em>Hours</em></h2>
 
+    <div class="hours-list">
 
-            </div>
+      <div class="hours-row">
+        <span class="day">Monday – Wednesday</span>
+        <span class="time">10:00 – 21:00</span>
+      </div>
 
-         </section>
-    </section>
+      <div class="hours-row">
+        <span class="day">Thursday – Friday</span>
+        <span class="time">10:00 – 23:00</span>
+      </div>
 
-    <!-- footer -->
+      <div class="hours-row">
+        <span class="day">Saturday</span>
+        <span class="time">09:00 – 23:00</span>
+      </div>
+
+      <div class="hours-row">
+        <span class="day">Sunday</span>
+        <span class="time">11:00 – 20:00</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="map-wrap">
+    <iframe
+      src="https://maps.google.com/maps?q=Ancienne%20Route%20Bonaberi%20Douala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+
+    <div id="map-address">
+      <i class="fas fa-location-dot"></i>
+      <span><strong>FineDine Restaurant</strong> · Ancienne Route, Bonaberi, Douala</span>
+    </div>
+
+  </div>
+
+</div>
      <footer>
 
   <div id="footer-grid">

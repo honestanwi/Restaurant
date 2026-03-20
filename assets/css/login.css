@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('/assets/images/login-signup/image.png') center/cover no-repeat;
+  background: url('../images/login-signup/image.png') center/cover no-repeat;
 }
 
 body::before {
