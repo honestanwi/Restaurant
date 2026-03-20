@@ -118,6 +118,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  #location-wrap {
+    flex-direction: column;
+  }
+
   #hours {
     padding: 3rem 1.5rem;
     gap: 1.5rem;
@@ -145,6 +149,10 @@ body {
 }
 
 @media (max-width: 480px) {
+  #location-wrap {
+    flex-direction:column;
+  }
+
   #hours {
     padding: 2.5rem 1.2rem;
   }
