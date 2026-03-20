@@ -262,7 +262,7 @@ transform: translateY(-3px);
 #featured > a {
   color: var(--gold);
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.6rem;
   letter-spacing: 1px;
   border-bottom: 1px solid rgba(232, 168, 56, 0.4);
   padding-bottom: 2px;
