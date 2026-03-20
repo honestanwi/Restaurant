@@ -412,6 +412,11 @@
     display: none;
   }
 
+  #breakfast .dish-grid{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
   .dish-grid {
     grid-template-columns: 1fr;
   }
